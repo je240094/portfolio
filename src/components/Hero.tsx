@@ -34,7 +34,11 @@ export function Hero() {
             <a href="#projects" className="btn btn--primary magnetic">
               Projekte ansehen <ArrowRight />
             </a>
-            <a href={profile.cvUrl} className="btn btn--ghost magnetic" target="_blank" rel="noreferrer">Lebenslauf (PDF)</a>
+            {profile.cvUrl ? (
+              <a href={profile.cvUrl} className="btn btn--ghost magnetic" target="_blank" rel="noreferrer">Lebenslauf (PDF)</a>
+            ) : (
+              <a href="#contact" className="btn btn--ghost magnetic">Kontakt aufnehmen</a>
+            )}
           </div>
 
           <div className="reveal">
@@ -45,9 +49,8 @@ export function Hero() {
         <div className="hero__visual reveal">
           <div className="avatar tilt">
             <div className="avatar__ring" />
-            <div className="avatar__img avatar__img--mono">
-              {/* Eigenes Foto: Bild in /public ablegen und hier <img src="/foto.jpg" alt={profile.name} /> einsetzen */}
-              <span>{profile.initial}</span>
+            <div className="avatar__img">
+              <img src={profile.photo} alt={`Porträt von ${profile.name}`} width={823} height={1151} fetchPriority="high" />
             </div>
             <div className="float-card float-card--1">
               <span className="float-card__icon">⚡</span>

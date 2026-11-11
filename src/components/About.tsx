@@ -48,9 +48,11 @@ export function About() {
               <li><span>Status</span><strong className="ok">Offen für Jobangebote</strong></li>
             </ul>
 
-            <a href={profile.cvUrl} className="btn btn--primary magnetic" target="_blank" rel="noreferrer">
-              Lebenslauf ansehen <Download />
-            </a>
+            {profile.cvUrl && (
+              <a href={profile.cvUrl} className="btn btn--primary magnetic" target="_blank" rel="noreferrer">
+                Lebenslauf ansehen <Download />
+              </a>
+            )}
           </div>
 
           <div className="about__stats" ref={statsRef}>

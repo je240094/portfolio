@@ -671,3 +671,7 @@ a.contact__item:hover { border-color: var(--primary); transform: translateX(6px)
 .mock__col span { height: 34px; border-radius: 6px; background: rgba(255, 255, 255, 0.09); border-left: 3px solid var(--c1); }
 .mock__col:nth-child(even) span { border-left-color: var(--c2); }
 .mock__col span.is-drag { transform: rotate(-4deg) translate(6px, -2px); background: rgba(255, 255, 255, 0.18); box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.6); }
+
+/* ---------- Porträtfoto ---------- */
+.avatar__img img { object-position: 50% 18%; transform: scale(1.02); transition: transform 0.8s var(--ease); }
+.avatar:hover .avatar__img img { transform: scale(1.07); }

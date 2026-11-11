@@ -15,7 +15,10 @@ export const profile = {
   phone: '01578 8012362',
   phoneIntl: '+4915788012362',
   timeZone: 'Europe/Berlin',
-  cvUrl: '/Lebenslauf_Jehad_Qassem.pdf',
+  // Das PDF ist per .gitignore ausgeschlossen (enthält Adresse) und existiert daher nur lokal.
+  // Für die Live-Seite: eine Version ohne Adresse in /public ablegen und hier immer verlinken.
+  cvUrl: import.meta.env.DEV ? `${import.meta.env.BASE_URL}Lebenslauf_Jehad_Qassem.pdf` : '',
+  photo: `${import.meta.env.BASE_URL}jehad.png`,
   // Trage hier deine Profil-Links ein. Leere Einträge werden nicht angezeigt.
   socials: {
     github: 'https://github.com/je240094',
