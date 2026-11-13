@@ -271,7 +271,7 @@ export const education: TimelineEntry[] = [
     date: 'Zertifiziert',
     title: 'Deutsch B2',
     place: 'Sprachzertifikat',
-    text: 'Weitere Sprachen: Kurdisch und Arabisch (Muttersprachen), Englisch (B1).',
+    text: 'Weitere Sprachen: Kurdisch (Muttersprache), Arabisch, Englisch (B1).',
   },
 ];
 
