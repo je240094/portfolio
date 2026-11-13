@@ -66,7 +66,7 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Frontend',
     icon: 'code',
-    items: ['TypeScript', 'JavaScript (ES6+)', 'Angular', 'Vue 3', 'Vuetify 3', 'React', 'HTML5', 'CSS3', 'Tailwind CSS', 'Responsive Design', 'SPA', 'PWA'],
+    items: ['TypeScript', 'JavaScript (ES6+)', 'Angular', 'Vue 3', 'Vuetify 3', 'React', 'HTML5', 'CSS3', 'Tailwind CSS', 'Responsive Design', 'SPA', 'PWA', 'Apache Cordova'],
     note: 'Komponentenbasierte Entwicklung und Single Page Applications',
   },
   {
@@ -92,7 +92,7 @@ export const skillGroups: SkillGroup[] = [
 export const techStack: string[] = [
   'TypeScript', 'JavaScript', 'Angular', 'Vue 3', 'Vuetify 3', 'React',
   'HTML5', 'CSS3', 'Tailwind CSS', 'Node.js', 'Express.js', 'REST-APIs', 'PostgreSQL', 'Prisma',
-  'Git', 'GitHub', 'NPM', 'Yarn', 'Vite', 'Docker', 'VS Code', 'SPA', 'PWA', 'Claude', 'Codex',
+  'Git', 'GitHub', 'NPM', 'Yarn', 'Vite', 'Docker', 'VS Code', 'SPA', 'PWA', 'Apache Cordova', 'Claude', 'Codex',
 ];
 
 export type ProjectCategory = 'fullstack' | 'frontend';
