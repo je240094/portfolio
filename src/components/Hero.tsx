@@ -5,6 +5,7 @@ import { Socials } from './Socials';
 
 export function Hero() {
   const typed = useTypewriter(profile.roles);
+  const longestRole = profile.roles.reduce((a, b) => (b.length > a.length ? b : a), '');
 
   return (
     <section className="hero" id="home">
@@ -23,11 +24,17 @@ export function Hero() {
 
           <p className="hero__subtitle reveal">
             Hallo, ich bin <strong>{profile.name}</strong> —{' '}
-            <span className="typed" aria-hidden="true">{typed}</span>
-            <span className="typed-caret" aria-hidden="true">|</span>
+            <span className="typed-wrap" aria-hidden="true">
+              <span className="typed-ghost">{longestRole}|</span>
+              <span className="typed-live">
+                <span className="typed">{typed}</span>
+                <span className="typed-caret">|</span>
+              </span>
+            </span>
             <span className="sr-only">{profile.roles.join(', ')}</span>
-            <br />
-            Vom Frontend mit TypeScript, Angular und Vue 3 über REST-APIs mit Node.js bis zur Datenbank mit PostgreSQL.
+            <span className="hero__subtitle-desc">
+              Vom Frontend mit TypeScript, Angular und Vue 3 über REST-APIs mit Node.js bis zur Datenbank mit PostgreSQL.
+            </span>
           </p>
 
           <div className="hero__cta reveal">

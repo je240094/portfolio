@@ -227,6 +227,11 @@ ul { list-style: none; }
 .hero__subtitle strong { color: var(--text); }
 .typed { color: var(--secondary); font-family: var(--font-mono); font-size: 0.95em; }
 .typed-caret { color: var(--secondary); animation: blink 1s steps(1) infinite; margin-left: 1px; }
+/* Fester Platz in Breite der längsten Rolle, damit der Typewriter kein Layout verschiebt */
+.typed-wrap { display: inline-grid; white-space: nowrap; }
+.typed-wrap > * { grid-area: 1 / 1; }
+.typed-ghost { visibility: hidden; color: transparent; font-family: var(--font-mono); font-size: 0.95em; }
+.hero__subtitle-desc { display: block; margin-top: 14px; }
 @keyframes blink { 50% { opacity: 0; } }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px; }
 .hero__socials { display: flex; gap: 12px; margin-top: 40px; }
